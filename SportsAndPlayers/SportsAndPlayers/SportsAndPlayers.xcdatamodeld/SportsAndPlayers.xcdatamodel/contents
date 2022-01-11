@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="hight" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="sport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sport" inverseName="player" inverseEntity="Sport"/>
+    </entity>
+    <entity name="Sport" representedClassName="Sport" syncable="YES" codeGenerationType="class">
+        <attribute name="img" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="sport" inverseEntity="Player"/>
+    </entity>
+    <elements>
+        <element name="Player" positionX="-36" positionY="9" width="128" height="89"/>
+        <element name="Sport" positionX="0" positionY="45" width="128" height="74"/>
+    </elements>
+</model>
